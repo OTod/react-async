@@ -5,6 +5,7 @@ import { fetchUser } from '../../actions'
 class UserHeader extends Component {
 
     componentDidMount() {
+        console.log(this.props);
         this.props.fetchUser(this.props.id);
     }
 
